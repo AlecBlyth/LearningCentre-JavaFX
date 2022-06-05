@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="764.0" prefWidth="541.0" stylesheets="@../Styling/Login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BunnyCorp.Main_Classes.A4a_AdminUserCreatorClass">
+    <children>
+        <Label layoutX="142.0" layoutY="14.0" style="-fx-text-fill: white;" text="Admin Menu">
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+        <Label layoutX="208.0" layoutY="72.0" text="User Creation ">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <VBox layoutX="52.0" layoutY="116.0" prefHeight="576.0" prefWidth="143.0" spacing="25.0">
+            <children>
+                <Label style="-fx-text-fill: white;" text="Username">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-text-fill: white;" text="Firstname">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="0.0" prefWidth="79.0" style="-fx-text-fill: white;" text="Surname">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-text-fill: white;" text="Address">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-text-fill: white;" text="City/Town">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-text-fill: white;" text="Postal Code">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-text-fill: white;" text="Phone Number">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-text-fill: white;" text="Date of Birth">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-text-fill: white;" text="Password">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-text-fill: white;" text="Membership">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <TextField fx:id="CreatePhone" layoutX="195.0" layoutY="438.0" prefHeight="39.0" prefWidth="210.0" promptText="Enter phone number">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="CreatePassword" layoutX="195.0" layoutY="552.0" prefHeight="39.0" prefWidth="210.0" promptText="Enter password">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="CreatePostcode" layoutX="195.0" layoutY="380.0" prefHeight="39.0" prefWidth="210.0" promptText="Enter postcode">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="CreateCity" layoutX="195.0" layoutY="326.0" prefHeight="39.0" prefWidth="210.0" promptText="Enter City/Town">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="CreateAddress" layoutX="195.0" layoutY="277.0" prefHeight="39.0" prefWidth="210.0" promptText="Enter Address">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="CreateSurname" layoutX="195.0" layoutY="222.0" prefHeight="39.0" prefWidth="210.0" promptText="Enter surname">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="CreateFirstname" layoutX="195.0" layoutY="164.0" prefHeight="39.0" prefWidth="210.0" promptText="Enter firstname">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="CreateUsername" layoutX="195.0" layoutY="110.0" prefHeight="39.0" prefWidth="210.0" promptText="Enter username">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Button  layoutX="208.0" layoutY="692.0" mnemonicParsing="false" onAction="#createUser" prefHeight="40.0" prefWidth="126.0" style="-fx-background-color: #0c801c; -fx-text-fill: white;" text="Create User" />
+        <Button  layoutX="14.0" layoutY="692.0" mnemonicParsing="false" onAction="#Back" prefHeight="40.0" prefWidth="126.0" style="-fx-background-color: #af2b29; -fx-text-fill: white;" text="Back" />
+        <Button  layoutX="401.0" layoutY="692.0" mnemonicParsing="false" onAction="#viewUsers" prefHeight="40.0" prefWidth="126.0" style="-fx-background-color: #4da7ff; -fx-text-fill: white;" text="View Users" />
+        <Label fx:id="emptyUsername" layoutX="443.0" layoutY="120.0" style="-fx-text-fill: red;" text="Empty!" visible="false" />
+        <Label fx:id="emptyFirstname" layoutX="443.0" layoutY="174.0" style="-fx-text-fill: red;" text="Empty!" visible="false" />
+        <Label fx:id="emptySurname" layoutX="443.0" layoutY="232.0" style="-fx-text-fill: red;" text="Empty!" visible="false" />
+        <Label fx:id="emptyAddress" layoutX="443.0" layoutY="287.0" style="-fx-text-fill: red;" text="Empty!" visible="false" />
+        <Label fx:id="emptyCity" layoutX="443.0" layoutY="336.0" style="-fx-text-fill: red;" text="Empty!" visible="false" />
+        <Label fx:id="emptyPostcode" layoutX="443.0" layoutY="390.0" style="-fx-text-fill: red;" text="Empty!" visible="false" />
+        <Label fx:id="emptyPhone" layoutX="443.0" layoutY="448.0" style="-fx-text-fill: red;" text="Empty!" visible="false" />
+        <Label fx:id="emptyBirth" layoutX="443.0" layoutY="506.0" style="-fx-text-fill: red;" text="Invalid!" visible="false" />
+        <Label fx:id="emptyPassword" layoutX="443.0" layoutY="561.0" style="-fx-text-fill: red;" text="Empty!" visible="false" />
+        <ChoiceBox fx:id="CreateMember" layoutX="195.0" layoutY="600.0" prefHeight="42.0" prefWidth="210.0" />
+      <DatePicker fx:id="CreateDOB" layoutX="195.0" layoutY="496.0" minHeight="-Infinity" prefHeight="39.0" prefWidth="210.0" />
+    </children>
+</AnchorPane>

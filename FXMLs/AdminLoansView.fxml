@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="541.0" stylesheets="@../Styling/Login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BunnyCorp.Main_Classes.A5c_AdminLoanViewerClass">
+    <children>
+        <Label layoutX="148.0" layoutY="14.0" style="-fx-text-fill: white;" text="Loan Viewer">
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+        <Button layoutX="207.0" layoutY="80.0" mnemonicParsing="false" onAction="#viewLoans" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: green; -fx-text-fill: white;" text="View All Loans" />
+        <Button layoutX="219.0" layoutY="593.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="103.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Back" />
+        <TextArea fx:id="txtAreaLoans" layoutX="12.0" layoutY="142.0" prefHeight="429.0" prefWidth="518.0" promptText="Click &quot;View All Loans&quot; to view all current loans" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="574.0" stylesheets="@../Styling/Login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BunnyCorp.Main_Classes.A6d_AdminStockCreatorClass">
+    <children>
+        <Label fx:id="lblMins" layoutX="280.0" layoutY="274.0" style="-fx-text-fill: white;" text="Minutes" visible="false" />
+        <Button layoutX="14.0" layoutY="603.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="103.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Back" />
+        <Label layoutX="224.0" layoutY="527.0" style="-fx-text-fill: white;" text="£">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtCost" alignment="CENTER" layoutX="240.0" layoutY="531.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="97.0" promptText="Price" />
+        <TextField fx:id="txtStock" alignment="CENTER" layoutX="240.0" layoutY="485.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="97.0" promptText="Stock" />
+        <VBox fx:id="videoLabels" alignment="TOP_RIGHT" disable="true" layoutX="64.0" layoutY="182.0" prefHeight="267.0" prefWidth="147.0" spacing="5.0" visible="false">
+            <children>
+                <Label fx:id="lblVideoTitle" prefHeight="36.0" style="-fx-text-fill: white;" text="Title:" />
+                <Label fx:id="lblVideoPublisher" prefHeight="36.0" style="-fx-text-fill: white;" text="Publisher:" />
+                <Label fx:id="lblVideoRuntime" prefHeight="36.0" style="-fx-text-fill: white;" text="Runtime:" />
+                <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="41.0" style="-fx-text-fill: white;" text="Storage Type:" />
+                <Label prefHeight="41.0" style="-fx-text-fill: white;" text="Format:" />
+                <Label fx:id="lblVideoGenre" prefHeight="36.0" style="-fx-text-fill: white;" text="Genre:" />
+            </children>
+        </VBox>
+        <VBox fx:id="videoBox" disable="true" layoutX="213.0" layoutY="182.0" prefHeight="200.0" prefWidth="312.0" spacing="5.0" visible="false">
+            <children>
+                <TextField fx:id="txtVideoTitle" minHeight="-Infinity" prefHeight="36.0" promptText="Enter Video Title" />
+                <TextField fx:id="txtVideoPublisher" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" promptText="Enter Video Publisher" />
+                <TextField fx:id="txtVideoRuntime" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="59.0" />
+                <ChoiceBox fx:id="VideoStorageType" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" />
+                <ChoiceBox fx:id="VideoFormat" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" />
+                <TextField fx:id="txtGenre" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" promptText="Enter Video Genre" />
+            </children>
+        </VBox>
+        <VBox fx:id="CDLabels" alignment="TOP_RIGHT" disable="true" layoutX="64.0" layoutY="182.0" prefHeight="303.0" prefWidth="147.0" spacing="5.0" visible="false">
+            <children>
+                <Label fx:id="lblCDTitle" prefHeight="36.0" style="-fx-text-fill: white;" text="Title:" />
+                <Label fx:id="lblCDPublisher" prefHeight="36.0" style="-fx-text-fill: white;" text="Publisher:" />
+                <Label fx:id="lblCDRuntime" prefHeight="36.0" style="-fx-text-fill: white;" text="Runtime:" />
+                <Label prefHeight="42.0" style="-fx-text-fill: white;" text="Storage Type:" />
+                <Label prefHeight="42.0" style="-fx-text-fill: white;" text="Format:" />
+                <Label fx:id="lblArtist" prefHeight="36.0" style="-fx-text-fill: white;" text="Artist:" />
+                <Label fx:id="lblTracks" prefHeight="36.0" style="-fx-text-fill: white;" text="Tracks:" />
+            </children>
+        </VBox>
+        <VBox fx:id="CDBox" disable="true" layoutX="213.0" layoutY="182.0" prefHeight="200.0" prefWidth="312.0" spacing="5.0" visible="false">
+            <children>
+                <TextField fx:id="txtCDTitle" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="36.0" promptText="Enter CD Title" />
+                <TextField fx:id="txtCDPublisher" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" promptText="Enter CD Publisher" />
+                <TextField fx:id="txtCDRuntime" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="59.0" />
+                <ChoiceBox fx:id="CDStorageType" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="150.0" />
+                <ChoiceBox fx:id="CDFormat" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" />
+                <TextField fx:id="txtArtist" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" promptText="Enter Artist" />
+                <TextField fx:id="txtTracks" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="59.0" />
+            </children>
+        </VBox>
+        <VBox fx:id="BookLabels" alignment="TOP_RIGHT" disable="true" layoutX="64.0" layoutY="182.0" prefHeight="259.0" prefWidth="147.0" spacing="5.0" visible="false">
+            <children>
+                <Label fx:id="lblBookTitle" prefHeight="36.0" style="-fx-text-fill: white;" text="Title:" />
+                <Label fx:id="lblBookPublisher" prefHeight="36.0" style="-fx-text-fill: white;" text="Publisher:" />
+                <Label fx:id="lblBookSubject" prefHeight="36.0" style="-fx-text-fill: white;" text="Subject Area:" />
+                <Label fx:id="lblBookPages" prefHeight="36.0" style="-fx-text-fill: white;" text="Pages:" />
+                <Label fx:id="lblBookISBN" prefHeight="36.0" style="-fx-text-fill: white;" text="ISBN:" />
+                <Label fx:id="lblBookAuthor" prefHeight="36.0" style="-fx-text-fill: white;" text="Author:" />
+            </children>
+        </VBox>
+        <VBox fx:id="BookBox" disable="true" layoutX="213.0" layoutY="182.0" prefHeight="200.0" prefWidth="312.0" spacing="5.0" visible="false">
+            <children>
+                <TextField fx:id="txtBookTitle" minHeight="-Infinity" prefHeight="36.0" promptText="Enter Book Title" />
+                <TextField fx:id="txtBookPublisher" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" promptText="Enter Publisher" />
+                <TextField fx:id="txtBookSubject" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" promptText="Enter Subject" />
+                <TextField fx:id="txtBookPages" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="89.0" promptText="Pages" />
+                <TextField fx:id="txtBookISBN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" promptText="Enter ISBN - 0000-0000" />
+                <TextField fx:id="txtBookAuthor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" promptText="Enter Author" />
+            </children>
+        </VBox>
+        <VBox fx:id="JournalLabels" alignment="TOP_RIGHT" disable="true" layoutX="64.0" layoutY="182.0" prefHeight="316.0" prefWidth="147.0" spacing="5.0" visible="false">
+            <children>
+                <Label fx:id="lblJournalTitle" prefHeight="36.0" style="-fx-text-fill: white;" text="Title:" />
+                <Label fx:id="lblJournalPublisher" prefHeight="36.0" style="-fx-text-fill: white;" text="Publisher:" />
+                <Label fx:id="lblJournalSubject" prefHeight="36.0" style="-fx-text-fill: white;" text="Subject Area:" />
+                <Label fx:id="lblJournalPages" prefHeight="36.0" style="-fx-text-fill: white;" text="Pages:" />
+                <Label fx:id="lblJournalISSN" prefHeight="36.0" style="-fx-text-fill: white;" text="ISSN:" />
+                <Label fx:id="lblJournalIssueNum" prefHeight="36.0" style="-fx-text-fill: white;" text="Issue Number:" />
+                <Label fx:id="lblIssueDate" prefHeight="36.0" style="-fx-text-fill: white;" text="Date of Issue:" />
+            </children>
+        </VBox>
+        <VBox fx:id="JournalBox" disable="true" layoutX="213.0" layoutY="182.0" prefHeight="200.0" prefWidth="312.0" spacing="5.0" visible="false">
+            <children>
+                <TextField fx:id="txtJournalTitle" minHeight="-Infinity" prefHeight="36.0" promptText="Enter Journal Title" />
+                <TextField fx:id="txtJournalPublisher" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" promptText="Enter Publisher" />
+                <TextField fx:id="txtJournalSubject" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" promptText="Enter Subject" />
+                <TextField fx:id="txtJournalPages" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="56.0" promptText="Pages" />
+                <TextField fx:id="txtJournalISSN" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" promptText="Enter ISSN (1234-ABCD)" />
+                <TextField fx:id="txtIssueNum" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="56.0" />
+                <DatePicker fx:id="datePicker" minHeight="-Infinity" prefHeight="36.0" prefWidth="201.0" />
+            </children>
+        </VBox>
+        <HBox alignment="CENTER" layoutY="80.0" prefHeight="66.0" prefWidth="574.0" spacing="10.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#changeItemType" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Change" />
+                <ChoiceBox fx:id="itemType" prefHeight="41.0" prefWidth="206.0" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutY="6.0" prefHeight="66.0" prefWidth="574.0">
+            <children>
+                <Label style="-fx-text-fill: white;" text="Stock Creator">
+                    <font>
+                        <Font size="45.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <Label fx:id="lblMinutes" disable="true" layoutX="284.0" layoutY="274.0" style="-fx-text-fill: white;" text="Minutes" visible="false" />
+        <Button layoutX="457.0" layoutY="603.0" mnemonicParsing="false" onAction="#createItem" prefHeight="40.0" prefWidth="103.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Create" />
+    </children>
+</AnchorPane>

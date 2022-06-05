@@ -1,0 +1,9 @@
+1001|lecturer|capitalism|Adam|Smith|127 High St|Kirkcaldy|KY5D8F|03069990552|16/06/1723|STAFF|
+1002|president|economics|Ronald|Reagan|56 Bel-Air|Los Caldy|KY8BD2|80865390552|06/02/1911|STAFF|
+1003|engineer|memeword|Tim|Berners-Lee|15 Westwood Place|London|KY9WWW|07700900262|08/06/1955|STAFF|
+1004|polymath|monalisa|Leonardo|da Vinci|23 Via Mozza|Florence|FL9MLA|07700900466|15/04/1452|MEMBER|
+1005|theoryman|sexyphysics|Richard|Feynman|Trump Tower|New York|NY5JEA|03069990552|11/05/1918|MEMBER|
+1006|destroyerofworlds|nuclearwar|Julius Robert|Oppenheimer|20 Trinity Site|New Mexico|NKW194|03069990828|22/04/1904|MEMBER|
+1007|crashtest|dummy|Samuel|Alderson|11 Marina Dey Rey|California|MDR238|03069990011|21/10/1914|CASUAL|
+1008|Zucc|dadada|Mark|Zuckerberg|1456 Edgewood Drive|California|EWD238|06505434800|14/05/1984|CASUAL|
+1009|bigmoney|money|Bill|Gates|1835 73rd Ave|Washington|WSA039|2067093140|28/10/1955|CASUAL|
